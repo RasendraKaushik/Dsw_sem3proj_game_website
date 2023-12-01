@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Links</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('images/catalouge_image.jpg') no-repeat center center fixed;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #524848;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .game img {
+            width: 100%;
+            height: auto;
+            max-width: 7500px; /* Set a fixed width for the images */
+            max-height: 300px; /* Set a fixed height for the images */
+        }
+
+        .game-name {
+            padding: 10px;
+            text-align: center;
+            background-color: #5f5555;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <!-- Snake Game -->
+        <div class="game">
+            <img src="images/snake_image.jpg" alt="Snake Game">
+            <div class="game-name"><a href="./snake/snake.html">Snake Game</a> </div>
+        </div>
+
+        <!-- Quiz Game -->
+        <div class="game">
+            <img src="images/quiz_image.jpg" alt="Quiz Game">
+            <div class="game-name"><a href="./quiz/quiz.html">Quiz Game</a></div>
+        </div>
+
+        <!-- Rock Paper Scissors Game -->
+        <div class="game">
+            <img src="images/rps_image.jpg" alt="Rock Paper Scissors Game">
+            <div class="game-name"><a href="./rps/rps.html">Rock Paper Scissors Game</a></div>
+        </div>
+
+        <!-- Hangman Game -->
+        <div class="game">
+            <img src="images/hangman_image.jpg" alt="Hangman Game">
+            <div class="game-name"><a href="./Hangman/hangman.html">Hangman Game</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
